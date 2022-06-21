@@ -1,0 +1,286 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PlushCV - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (11/28/2021)
+%
+% Author:
+% Shubham Mazumder (http://mazumder.me)
+%
+% Hacked together from:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add more icon options 
+% 4. Fix hacky left alignment on contact line
+% 5. Remove Hacky fix for awkward extra vertical space
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Icons:
+%%Main: https://icons8.com/icons/carbon-copy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{plushcv}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Harsha}{Vardhan}{Product Enthusiast}
+{\contactline{\href{https://metal-barberry-01c.notion.site/Product-Portfolio-78d7a8e46ed54855b41cf63f428ae587}{Portfolio}}{\href{https://www.linkedin.com/in/harsh-a-vardhan}{Linkedin}}{\href{mailto:imharsh9@gmail.com}{imharsh9@gmail.com}}{\href{tel:+91-9182947600}{9182947600}}{\href{https://github.com/Harsh-a-Vardhan}{GitHub}}}
+
+% \namesection{Firstname}{Lastname}{Full Stack Software Engineer}{\contactline{\href{https://www.mazumder.me}{mazumder.me}}{\href{https://www.github.com/sansquoi}{sansquoi}}{\href{https://www.linkedin.com/mazumders}{mazumders}}{\href{mailto:shubham.mazumder@gmail.com}{first.last@email.com}}{\href{tel:+1999999999}{9999999999}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.70\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\sectionsep
+\sectionsep
+{\begingroup
+\hbox{\includegraphics[scale=0.23,trim={0.5cm 0.5cm 0cm 0cm}]{icons/main/filljob.png}\hspace{0.1cm}
+\section{Job Experience}}
+\endgroup}
+\runsubsection{Licious}
+\descript{| Supply Chain Analyst}
+\location{Dec 2021 – Apr 2022 | Bangalore}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\sectionsep
+\item Made key contributions and defined new metrics in the project which increased the meat products yield by 5-6\% in 3 months increasing revenue by millions.
+\item Closely monitored the sourcing and procurement of 30 meat SKUs across 6 different suppliers.
+\end{tightemize}
+\sectionsep
+\sectionsep
+
+\runsubsection{Licious}
+\descript{| Software Development Engineer - 1 }
+\location{Jul 2021 – Dec 2021 | Bangalore}
+\begin{tightemize}
+\sectionsep
+\item Worked on deployment of key APIs in forecasting team. Was part of phase-1 in the complete automation of forecasting while working with various team members.
+\end{tightemize}
+\sectionsep
+\sectionsep
+
+\runsubsection{CueMath}
+\descript{| Design Intern }
+\location{Jul 2021 – Dec 2021 | Bangalore}
+\begin{tightemize}
+\sectionsep
+\item Designed 2k+ illustrations for slides using Illustrator and Figma.
+\item Got the chance to explore Search Engine Optimization and Content Writing.
+\end{tightemize}
+\sectionsep
+\sectionsep
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+{\begingroup
+\hbox{\includegraphics[scale=0.23,trim={0.5cm 0.5cm 0cm 0cm}]{icons/main/filledu.png}\hspace{0.1cm}
+\section{Education}}
+\endgroup}
+
+\runsubsection{B.Tech  Mechanical Engineering} \\
+\smallsep
+BITS Pilani, Pilani Campus \\
+\smallsep
+Aug 2017 - July 2021 | Pilani, Rajasthan\\
+\smallsep
+CGPA: 6.34 \\
+
+\sectionsep
+\sectionsep
+
+\subsection{PCM, BIEAP }
+\smallsep
+Sri Chaitanya\\
+\smallsep
+May 2017 | Vijayawada\\
+\smallsep
+Score: 98\% \\
+\sectionsep
+\sectionsep
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PoRs
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\begingroup
+\hbox{\includegraphics[scale=0.23,trim={0.5cm 0.5cm 0cm 0cm}]{icons/main/fillpor.png}\hspace{0.1cm}
+\section{Positions of Responsibility}}
+\endgroup}
+
+\runsubsection{APOGEE Coordinator}
+\descript{| Department of Art, Design and Publicity, BITS Pilani}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\smallsep
+\item Supervised 62 people and oversaw the structural decorations for APOGEE, the technical fest of BITS Pilani.
+\smallsep
+\item Worked as the head of inventory and managed assets worth more than 5 lakhs for Oasis and APOGEE fests which have a combined footfall of 6000+ people.
+\end{tightemize}
+
+\sectionsep
+\sectionsep
+
+\runsubsection{Treasurer}
+\descript{| The American Society of Mechanical Engineers, Pilani Chapter}
+\begin{tightemize}
+\smallsep
+\item Solely responsible for managing the finances and bank accounts while closely collaborating with numerous stakeholders.
+\smallsep
+\item Tripled the event frequency to 12 per year and increased outreach of the events by 500\% through digital marketing.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Projects}
+
+%\runsubsection{Credit Card Fraud Detection using Unsupervised Learning}
+%\descript{| Machine Learning}
+%\begin{tightemize}
+%\item Developed a machine learning model to identify potential frauds among %credit card applicants using Self Organizing Map(SOM).
+%\item Used Gaussian function as neighborhood function and Euclidean distance %activation distance to train the model on a 14-dimensional
+%dataset with about 700 instances of applicants.
+%\item Reduced the data to a 2D hexagonal grid with each hexagon representing a %cluster and its color representing the calculated value of the
+%distance from neurons in the neighborhood and identified the outliers.
+%\end{tightemize}
+%\sectionsep
+
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%\runsubsection{Speech Assistant}
+%\descript{| Python3}
+%\begin{tightemize}
+%\item A simple app that uses speech recognition and Google's text to speech API.
+%\end{tightemize}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.25\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\sectionsep
+\sectionsep
+
+{\begingroup
+\hbox{\includegraphics[scale=0.23,trim={0.5cm 0.5cm 0cm 0cm}]{icons/main/fillskill.png}\hspace{0.1cm}
+\section{Skills}}
+\endgroup}
+\subsection{Programming}
+\sectionsep
+C++ \textbullet{} C \textbullet{} Python3 \textbullet{}
+Java \\
+\sectionsep
+\sectionsep
+\smallsep
+
+\subsection{Design}
+\sectionsep
+Adobe Illustrator \textbullet{} Adobe XD
+\textbullet{} Figma \\
+\sectionsep
+\sectionsep
+\smallsep
+
+\subsection{Analytics}
+\sectionsep
+Excel \textbullet{} SQL \\
+\sectionsep
+\sectionsep
+\smallsep
+
+\subsection{Subjects/Electives}
+\sectionsep
+OS \textbullet{} DSA \textbullet{} OOP \textbullet{} ML \textbullet{} Discrete Mathematics \textbullet{} Supply Chain Management \\
+\sectionsep
+\sectionsep
+\sectionsep
+\sectionsep
+\sectionsep
+\sectionsep
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+{\begingroup
+\hbox{\includegraphics[scale=0.23,trim={0.5cm 0.5cm 0cm 0cm}]{icons/main/fillcerti.png}\hspace{0.1cm}
+\section{Certifications}}
+\endgroup}
+
+\subsection{Udemy}
+\smallsep
+Product Management Course \\
+\sectionsep
+\sectionsep
+\smallsep
+\subsection{Yale | Coursera}
+\smallsep
+Financial Markets \\
+\smallsep
+Introduction to Psychology
+\sectionsep
+\sectionsep
+\smallsep
+\subsection{UMich | Coursera}
+\smallsep
+Python for Everybody Specialization
+\sectionsep
+
+% \subsection{MIT OCW}
+% 6.006 Intro to Algorithms
+% \sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
+
